@@ -1,6 +1,6 @@
 # Data files and directories common in repo root
 balloon_dataset.zip
-datasets/
+datasets/balloon
 logs/
 *.h5
 results/
