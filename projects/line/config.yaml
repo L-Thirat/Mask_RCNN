@@ -1,0 +1,10 @@
+obj: washer
+validation_ratio: 0.2
+grayscale: true
+img_resize: 416
+fill_square: 0
+augment_num: 10000
+p_rotate: 0.3
+rotate_angle_vari: 0.3
+p_horizonal_flip: 0
+p_vertical_flip: 0
