@@ -2,6 +2,8 @@ import time
 import random
 import sys
 import yaml
+from os import sep
+import xml.etree.ElementTree as ET
 
 
 def time_string():
@@ -45,3 +47,34 @@ def load_config(project_path):
         sys.exit(1)
 
     return cfg
+
+
+def load_base_xml(filepath):
+    mytree = ET.parse(filepath)
+    myroot = mytree.getroot()
+    return mytree, myroot
+
+
+def write_base_cml(filepath, mytree):
+    mytree.write(filepath)
+
+
+def extract_filename(filepath):
+    """Extract file names"""
+
+    split_path = filepath.split(sep)
+    dir_path = split_path[:-1]
+    filename = split_path[-1]
+    dot_pos = filename.rfind('.')
+    imgname = filename[:dot_pos]
+    ext = filename[dot_pos:]
+    output = {
+        "dir_path": dir_path,
+        "split_path": split_path,
+        "filename": filename,
+        "dot_pos": dot_pos,
+        "imgname": imgname,
+        "ext": ext,
+    }
+
+    return output

@@ -147,7 +147,7 @@ class Config(object):
     TRAIN_ROIS_PER_IMAGE = 200
 
     # Percent of positive ROIs used to train classifier/mask heads
-    ROI_POSITIVE_RATIO = 0.5
+    ROI_POSITIVE_RATIO = 0.8
 
     # Pooled ROIs
     POOL_SIZE = 7
@@ -172,7 +172,7 @@ class Config(object):
     DETECTION_MIN_CONFIDENCE = 0.95
 
     # Non-maximum suppression threshold for detection
-    DETECTION_NMS_THRESHOLD = 0.5
+    DETECTION_NMS_THRESHOLD = 0.8
 
     # Learning rate and momentum
     # The Mask RCNN paper uses lr=0.02, but on TensorFlow it causes

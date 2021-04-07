@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>frame_2021-02-12_221649_IN4_000_n.jpg</filename>
+	<path>../projects/line/preprocess/line/train\frame_2021-02-12_221649_IN4.xml</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>416</width>
+		<height>416</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>line</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>133.9</xmin>
+			<ymin>137.79999999999998</ymin>
+			<xmax>272.34999999999997</xmax>
+			<ymax>169.64999999999998</ymax>
+		</bndbox>
+	</object>
+</annotation>
