@@ -2,8 +2,8 @@ import glob
 import json
 import os
 
-dir_dataset = "../../datasets/"
 project = "line"
+dir_dataset = "../../projects/%s/datasets/" % project
 
 
 def labelme2one(dir_path):
@@ -39,5 +39,5 @@ def labelme2one(dir_path):
         json.dump(one_summarize, outfile)
 
 
-labelme2one(os.path.join(dir_dataset, project+"/train/",))
-labelme2one(os.path.join(dir_dataset, project+"/val/",))
+labelme2one(dir_dataset + "/train/")
+labelme2one(dir_dataset + "/val/")
